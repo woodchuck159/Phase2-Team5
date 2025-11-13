@@ -31,7 +31,7 @@ def wipe_s3_bucket(event, context):
   except Exception as e:
     return {
       "statusCode": 500,
-      "body": "{e}"
+      "body": f"{e}"
     }
 
   return {
